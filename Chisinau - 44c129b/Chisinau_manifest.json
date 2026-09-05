@@ -1,0 +1,688 @@
+{
+ "site": {
+  "name": "chisinau",
+  "lat": 47.0105,
+  "lon": 28.8638,
+  "epsg": 32635,
+  "cx": 641666.9867873734,
+  "cy": 5208016.680924505,
+  "playable_bbox_utm": [
+   634498.9867873734,
+   5200848.680924505,
+   648834.9867873734,
+   5215184.680924505
+  ],
+  "world_bbox_utm": [
+   612994.9867873734,
+   5179344.680924505,
+   670338.9867873734,
+   5236688.680924505
+  ],
+  "playable_bbox_wgs84": [
+   28.767417103170548,
+   46.94446094885575,
+   28.960409484302623,
+   47.07646757976608
+  ],
+  "world_bbox_wgs84": [
+   28.479620783732386,
+   46.74592007487112,
+   29.251604599540574,
+   47.27393634768883
+  ]
+ },
+ "params": {
+  "exaggeration": 1.0,
+  "sea_level_m": null,
+  "water_surface_real_m": null,
+  "oversample": "auto",
+  "deterrace": "auto",
+  "burn": true,
+  "hydro": {
+   "min_order": 2,
+   "width_by_order": {
+    "2": 4,
+    "3": 8,
+    "4": 14,
+    "5": 24,
+    "6": 40,
+    "7": 70,
+    "8": 120,
+    "9": 200,
+    "10": 300
+   },
+   "depth_by_order": {
+    "2": 0.8,
+    "3": 1.2,
+    "4": 2.0,
+    "5": 3.0,
+    "6": 4.0,
+    "7": 6.0,
+    "8": 8.0,
+    "9": 12.0,
+    "10": 15.0
+   },
+   "depth_scale": 1.0,
+   "polygon_taper_m": 60.0,
+   "pond_depth_m": 2.0,
+   "min_polygon_area_m2": 2000.0,
+   "surface_smooth_m": 120.0
+  },
+  "floor_margin_m": 5.0,
+  "water_sources": null,
+  "dem_source": null,
+  "hydro_source": null
+ },
+ "dem_source": {
+  "finest_ground_m": 30.0,
+  "finest_name": "Copernicus GLO-30",
+  "datasets": [
+   "Copernicus_DSM_COG_10_N46_00_E028_00_DEM",
+   "Copernicus_DSM_COG_10_N47_00_E028_00_DEM"
+  ],
+  "playable_oversample": 1,
+  "kind": "dsm",
+  "source": "cop30",
+  "vertical_datum": "EGM2008",
+  "resample": "upsample-cubic-spline",
+  "playable": {
+   "source": "cop30",
+   "product": "Copernicus GLO-30",
+   "kind": "dsm",
+   "native_m": 30.0,
+   "vertical_datum": "EGM2008",
+   "resample": "upsample-cubic-spline",
+   "oversample": 1,
+   "m_per_px": 3.5,
+   "missing_tiles": null,
+   "datasets": [
+    "Copernicus_DSM_COG_10_N46_00_E028_00_DEM",
+    "Copernicus_DSM_COG_10_N47_00_E028_00_DEM"
+   ]
+  },
+  "world": {
+   "source": "cop30",
+   "product": "Copernicus GLO-30",
+   "kind": "dsm",
+   "native_m": 30.0,
+   "vertical_datum": "EGM2008",
+   "resample": "upsample-cubic-spline",
+   "oversample": 1,
+   "m_per_px": 14.0,
+   "missing_tiles": null,
+   "datasets": [
+    "Copernicus_DSM_COG_10_N46_00_E028_00_DEM",
+    "Copernicus_DSM_COG_10_N46_00_E029_00_DEM",
+    "Copernicus_DSM_COG_10_N47_00_E028_00_DEM",
+    "Copernicus_DSM_COG_10_N47_00_E029_00_DEM"
+   ]
+  },
+  "mixed_sources": false
+ },
+ "sources": {
+  "elevation": {
+   "playable": "cop30",
+   "world": "cop30",
+   "3dep": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage",
+   "cop30": "https://copernicus-dem-30m.s3.amazonaws.com"
+  },
+  "hydrography": {
+   "nhd": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer",
+   "nhd_layers": {
+    "flowline": 3,
+    "area": 8,
+    "waterbody": 9
+   },
+   "osm": "Overpass API",
+   "hydrorivers": "HydroSHEDS HydroRIVERS v1.0"
+  }
+ },
+ "nodata_filled_fraction": {
+  "playable": 0.0,
+  "world": 0.0
+ },
+ "terracing": {
+  "playable_integer_fraction": 0.021487712860107422,
+  "world_integer_fraction": 0.022226333618164062,
+  "deterraced": false
+ },
+ "hydro_source": {
+  "id": "osm",
+  "flowlines": 6100,
+  "areas": 8,
+  "waterbodies": 1539,
+  "culverted": 1969,
+  "order_sources": {
+   "osm-tag": 3767,
+   "hydrorivers-area": 2333
+  }
+ },
+ "water_polygons_playable": [
+  {
+   "name": "Lacul \u201eValea Morilor\u201d",
+   "ftype": 390,
+   "area_km2": 0.295,
+   "order": 3,
+   "depth_m": 1.2,
+   "surface_p10_m": 68.0,
+   "surface_p90_m": 70.03
+  },
+  {
+   "name": "Lacul nr. 1",
+   "ftype": 390,
+   "area_km2": 0.165,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 41.0,
+   "surface_p90_m": 42.2
+  },
+  {
+   "name": "Lacul nr. 4 (Traktorn\u00eei)",
+   "ftype": 390,
+   "area_km2": 0.151,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 38.5,
+   "surface_p90_m": 39.26
+  },
+  {
+   "name": "Lacul \u201eVasimiorca\u201d",
+   "ftype": 390,
+   "area_km2": 0.085,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 69.5,
+   "surface_p90_m": 73.1
+  },
+  {
+   "name": "Iazul \u201eColoni\u021ba\u201d",
+   "ftype": 436,
+   "area_km2": 0.083,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 105.0,
+   "surface_p90_m": 107.02
+  },
+  {
+   "name": "Lacul nr. 3",
+   "ftype": 390,
+   "area_km2": 0.068,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 41.5,
+   "surface_p90_m": 43.88
+  },
+  {
+   "name": "Lacul nr. 2",
+   "ftype": 390,
+   "area_km2": 0.066,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 41.01,
+   "surface_p90_m": 43.66
+  },
+  {
+   "name": "Iazul H\u00e2rtoape",
+   "ftype": 390,
+   "area_km2": 0.054,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 109.0,
+   "surface_p90_m": 110.14
+  },
+  {
+   "name": "Lacul nr. 1",
+   "ftype": 390,
+   "area_km2": 0.043,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 68.02,
+   "surface_p90_m": 72.94
+  },
+  {
+   "name": "Iazul Tortuga",
+   "ftype": 390,
+   "area_km2": 0.043,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 132.8,
+   "surface_p90_m": 133.55
+  },
+  {
+   "name": "Lacul nr. 3",
+   "ftype": 390,
+   "area_km2": 0.043,
+   "order": 2,
+   "depth_m": 0.8,
+   "surface_p10_m": 55.0,
+   "surface_p90_m": 57.96
+  },
+  {
+   "name": "Lacul Albi\u0219oara",
+   "ftype": 436,
+   "area_km2": 0.041,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 38.75,
+   "surface_p90_m": 42.99
+  }
+ ],
+ "water_fraction": {
+  "playable": 0.011996448040008545,
+  "world": 0.02120596170425415
+ },
+ "vertical": {
+  "water_surface_real_m": 28.160362243652344,
+  "sea_level_m": 38.0,
+  "offset_m": 9.839637756347656,
+  "exaggeration": 1.0,
+  "height_scale_m": 410.0,
+  "union_min_m": 5.839637756347656,
+  "union_max_m": 392.97562408447266,
+  "m_per_level": 0.006256198977645533,
+  "water_surface_source": "p10 surface along order-6 flowlines (B\u00eec, Ciocana, Hulboaca)"
+ },
+ "water_sources": [
+  {
+   "kind": "water.border_river_out",
+   "px": [
+    3911,
+    4095
+   ],
+   "elev_m": 37.7,
+   "label": "B\u00eec outflow (S edge)",
+   "why": "order-6 flowline crosses the S edge; set level 37.7 m; drainage 1,134 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "out",
+    "order": 6,
+    "edge": "S",
+    "level_m": 37.7,
+    "drainage_km2": 1134.2,
+    "direction_confidence": "high",
+    "nhd_levelpath": 1
+   },
+   "geometry": null,
+   "number": 1,
+   "xy_m": [
+    13688.5,
+    0.0
+   ],
+   "xy_center_m": [
+    6520.5,
+    -7168.0
+   ],
+   "symbol": "Border river, outflow"
+  },
+  {
+   "kind": "water.border_river_out",
+   "px": [
+    3830,
+    4095
+   ],
+   "elev_m": 38.0,
+   "label": "unnamed order-6 stream outflow (S edge)",
+   "why": "order-6 flowline crosses the S edge; set level 38.0 m; drainage 1,134 km\u00b2; direction confidence low (flow direction uninitialised in NHD)",
+   "params": {
+    "flow": "out",
+    "order": 6,
+    "edge": "S",
+    "level_m": 38.0,
+    "drainage_km2": 1134.2,
+    "direction_confidence": "low (flow direction uninitialised in NHD)",
+    "nhd_levelpath": 966
+   },
+   "geometry": null,
+   "number": 2,
+   "xy_m": [
+    13405.0,
+    0.0
+   ],
+   "xy_center_m": [
+    6237.0,
+    -7168.0
+   ],
+   "symbol": "Border river, outflow"
+  },
+  {
+   "kind": "water.border_river_in",
+   "px": [
+    3899,
+    4095
+   ],
+   "elev_m": 37.7,
+   "label": "unnamed order-6 stream inflow (S edge)",
+   "why": "order-6 flowline crosses the S edge; set level 37.7 m; drainage 1,134 km\u00b2; direction confidence low (flow direction uninitialised in NHD)",
+   "params": {
+    "flow": "in",
+    "order": 6,
+    "edge": "S",
+    "level_m": 37.7,
+    "drainage_km2": 1134.2,
+    "direction_confidence": "low (flow direction uninitialised in NHD)",
+    "nhd_levelpath": 966
+   },
+   "geometry": null,
+   "number": 3,
+   "xy_m": [
+    13646.5,
+    0.0
+   ],
+   "xy_center_m": [
+    6478.5,
+    -7168.0
+   ],
+   "symbol": "Border river, inflow"
+  },
+  {
+   "kind": "water.border_river_out",
+   "px": [
+    3885,
+    4095
+   ],
+   "elev_m": 37.2,
+   "label": "unnamed order-6 stream outflow (S edge)",
+   "why": "order-6 flowline crosses the S edge; set level 37.2 m; drainage 1,134 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "out",
+    "order": 6,
+    "edge": "S",
+    "level_m": 37.2,
+    "drainage_km2": 1134.2,
+    "direction_confidence": "high",
+    "nhd_levelpath": 1010
+   },
+   "geometry": null,
+   "number": 4,
+   "xy_m": [
+    13597.5,
+    0.0
+   ],
+   "xy_center_m": [
+    6429.5,
+    -7168.0
+   ],
+   "symbol": "Border river, outflow"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    0,
+    4043
+   ],
+   "elev_m": 80.9,
+   "label": "unnamed order-5 stream (W edge)",
+   "why": "order-5 creek enters at the edge; drainage 279 km\u00b2 -> large flow (100% of the largest stream here)",
+   "params": {
+    "order": 5,
+    "drainage_km2": 279.1,
+    "relative_rate": 1.0,
+    "size": "large",
+    "entry": "enters at the edge",
+    "nhd_levelpath": "124"
+   },
+   "geometry": null,
+   "number": 5,
+   "xy_m": [
+    0.0,
+    182.0
+   ],
+   "xy_center_m": [
+    -7168.0,
+    -6986.0
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    1425,
+    0
+   ],
+   "elev_m": 82.9,
+   "label": "R\u00e2ule\u021bul Hulbocica (N edge)",
+   "why": "order-4 creek enters at the edge; drainage 40 km\u00b2 -> small flow (14% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 39.9,
+    "relative_rate": 0.14,
+    "size": "small",
+    "entry": "enters at the edge",
+    "nhd_levelpath": "86"
+   },
+   "geometry": null,
+   "number": 6,
+   "xy_m": [
+    4987.5,
+    14332.5
+   ],
+   "xy_center_m": [
+    -2180.5,
+    7164.5
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    1833,
+    552
+   ],
+   "elev_m": 98.1,
+   "label": "unnamed order-4 stream",
+   "why": "order-4 creek upstream end inside the map (reaches this order here); drainage 40 km\u00b2 -> small flow (14% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 39.9,
+    "relative_rate": 0.14,
+    "size": "small",
+    "entry": "upstream end inside the map (reaches this order here)",
+    "nhd_levelpath": "325"
+   },
+   "geometry": null,
+   "number": 7,
+   "xy_m": [
+    6415.5,
+    12400.5
+   ],
+   "xy_center_m": [
+    -752.5,
+    5232.5
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    1549,
+    4059
+   ],
+   "elev_m": 81.4,
+   "label": "Valea Schinoasa",
+   "why": "order-4 creek upstream end inside the map (reaches this order here); drainage 32 km\u00b2 -> small flow (12% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 32.5,
+    "relative_rate": 0.12,
+    "size": "small",
+    "entry": "upstream end inside the map (reaches this order here)",
+    "nhd_levelpath": "14"
+   },
+   "geometry": null,
+   "number": 8,
+   "xy_m": [
+    5421.5,
+    126.0
+   ],
+   "xy_center_m": [
+    -1746.5,
+    -7042.0
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    3662,
+    143
+   ],
+   "elev_m": 93.9,
+   "label": "unnamed order-4 stream",
+   "why": "order-4 creek headwater inside the map; drainage 32 km\u00b2 -> small flow (12% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 32.5,
+    "relative_rate": 0.12,
+    "size": "small",
+    "entry": "headwater inside the map",
+    "nhd_levelpath": "203"
+   },
+   "geometry": null,
+   "number": 9,
+   "xy_m": [
+    12817.0,
+    13832.0
+   ],
+   "xy_center_m": [
+    5649.0,
+    6664.0
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    3357,
+    37
+   ],
+   "elev_m": 105.7,
+   "label": "unnamed order-4 stream",
+   "why": "order-4 creek upstream end inside the map (reaches this order here); drainage 32 km\u00b2 -> small flow (12% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 32.5,
+    "relative_rate": 0.12,
+    "size": "small",
+    "entry": "upstream end inside the map (reaches this order here)",
+    "nhd_levelpath": "1165"
+   },
+   "geometry": null,
+   "number": 10,
+   "xy_m": [
+    11749.5,
+    14203.0
+   ],
+   "xy_center_m": [
+    4581.5,
+    7035.0
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    2,
+    3868
+   ],
+   "elev_m": 116.1,
+   "label": "unnamed order-4 stream",
+   "why": "order-4 creek headwater inside the map; drainage 32 km\u00b2 -> small flow (11% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 31.6,
+    "relative_rate": 0.11,
+    "size": "small",
+    "entry": "headwater inside the map",
+    "nhd_levelpath": "708"
+   },
+   "geometry": null,
+   "number": 11,
+   "xy_m": [
+    7.0,
+    794.5
+   ],
+   "xy_center_m": [
+    -7161.0,
+    -6373.5
+   ],
+   "symbol": "Stream source"
+  }
+ ],
+ "world_center_mean_abs_diff_before_replace_m": 0.25432780300660474,
+ "playable": {
+  "min_real_m": 26.584415435791016,
+  "max_real_m": 236.59432983398438,
+  "relief_m": 210.00991821289062,
+  "min_cs2_m": 36.42405319213867,
+  "max_cs2_m": 246.4339599609375,
+  "buildable_fraction_land": 0.6367188388429526,
+  "buildable_fraction_all": 0.6391479969024658,
+  "px_min": 5822,
+  "px_max": 39390
+ },
+ "world": {
+  "min_real_m": -4.0,
+  "max_real_m": 383.135986328125,
+  "px_min": 933,
+  "px_max": 62814
+ },
+ "elapsed_s": 27.3,
+ "outputs": {
+  "heightmap": {
+   "path": "out\\chisinau\\chisinau_heightmap.png",
+   "shape": [
+    4096,
+    4096
+   ],
+   "dtype": "uint16",
+   "min_px": 5822,
+   "max_px": 39390,
+   "unique_values": 33514
+  },
+  "worldmap": {
+   "path": "out\\chisinau\\chisinau_worldmap.png",
+   "shape": [
+    4096,
+    4096
+   ],
+   "dtype": "uint16",
+   "min_px": 933,
+   "max_px": 62814,
+   "unique_values": 60705
+  }
+ },
+ "run": {
+  "argv": [
+   "--site",
+   "chisinau"
+  ],
+  "args": {
+   "center": null,
+   "bbox": null,
+   "site": "chisinau",
+   "name": "chisinau",
+   "dem_source": null,
+   "hydro_source": null,
+   "exaggeration": 1.0,
+   "sea_level": null,
+   "water_surface": null,
+   "oversample": "auto",
+   "deterrace": "auto",
+   "no_burn": false,
+   "min_order": 2,
+   "depth_scale": 1.0,
+   "epsg": null,
+   "out": "out",
+   "publish": false,
+   "maps_repo": null,
+   "no_push": false
+  },
+  "generated": "2026-09-05T18:18:55",
+  "git_commit": "c85848d",
+  "cs2_spec": {
+   "heightmap_px": 4096,
+   "playable_m": 14336.0,
+   "world_m": 57344.0,
+   "pixel_65535_m": 410.0
+  }
+ }
+}

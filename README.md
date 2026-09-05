@@ -47,4 +47,5 @@ GitHub's free LFS tier is 1 GB of storage and 1 GB of bandwidth per month; each 
 | Map | Centre | Height scale | Sea level | Exag. | Buildable | Relief | QA | Published |
 |---|---|---|---|---|---|---|---|---|
 | [Chattanooga - 109bf4e](Chattanooga%20-%20109bf4e/) | 35.0456, -85.3097 | **610 m** | 63 m | ×1.00 | 51% | 485 m | [QA](Chattanooga%20-%20109bf4e/Chattanooga_qa.png) | 2026-09-05 |
+| [Chisinau - 44c129b](Chisinau%20-%2044c129b/) | 47.0105, 28.8638 | **410 m** | 38 m | ×1.00 | 64% | 210 m | [QA](Chisinau%20-%2044c129b/Chisinau_qa.png) | 2026-09-05 |
 <!-- maps:end -->

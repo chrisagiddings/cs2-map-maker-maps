@@ -1,0 +1,337 @@
+{
+ "meta": {
+  "name": "chisinau",
+  "height_scale_m": 410.0,
+  "sea_level_m": 38.0,
+  "centre": [
+   47.0105,
+   28.8638
+  ]
+ },
+ "coordinate_note": "xy_m from the SW corner of the playable area, x east / y north; xy_center_m relative to the map centre",
+ "placements": [
+  {
+   "kind": "water.border_river_in",
+   "px": [
+    3899,
+    4095
+   ],
+   "elev_m": 37.7,
+   "label": "unnamed order-6 stream inflow (S edge)",
+   "why": "order-6 flowline crosses the S edge; set level 37.7 m; drainage 1,134 km\u00b2; direction confidence low (flow direction uninitialised in NHD)",
+   "params": {
+    "flow": "in",
+    "order": 6,
+    "edge": "S",
+    "level_m": 37.7,
+    "drainage_km2": 1134.2,
+    "direction_confidence": "low (flow direction uninitialised in NHD)",
+    "nhd_levelpath": 966
+   },
+   "geometry": null,
+   "number": 1,
+   "xy_m": [
+    13646.5,
+    0.0
+   ],
+   "xy_center_m": [
+    6478.5,
+    -7168.0
+   ],
+   "symbol": "Border river, inflow"
+  },
+  {
+   "kind": "water.border_river_out",
+   "px": [
+    3830,
+    4095
+   ],
+   "elev_m": 38.0,
+   "label": "unnamed order-6 stream outflow (S edge)",
+   "why": "order-6 flowline crosses the S edge; set level 38.0 m; drainage 1,134 km\u00b2; direction confidence low (flow direction uninitialised in NHD)",
+   "params": {
+    "flow": "out",
+    "order": 6,
+    "edge": "S",
+    "level_m": 38.0,
+    "drainage_km2": 1134.2,
+    "direction_confidence": "low (flow direction uninitialised in NHD)",
+    "nhd_levelpath": 966
+   },
+   "geometry": null,
+   "number": 2,
+   "xy_m": [
+    13405.0,
+    0.0
+   ],
+   "xy_center_m": [
+    6237.0,
+    -7168.0
+   ],
+   "symbol": "Border river, outflow"
+  },
+  {
+   "kind": "water.border_river_out",
+   "px": [
+    3885,
+    4095
+   ],
+   "elev_m": 37.2,
+   "label": "unnamed order-6 stream outflow (S edge)",
+   "why": "order-6 flowline crosses the S edge; set level 37.2 m; drainage 1,134 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "out",
+    "order": 6,
+    "edge": "S",
+    "level_m": 37.2,
+    "drainage_km2": 1134.2,
+    "direction_confidence": "high",
+    "nhd_levelpath": 1010
+   },
+   "geometry": null,
+   "number": 3,
+   "xy_m": [
+    13597.5,
+    0.0
+   ],
+   "xy_center_m": [
+    6429.5,
+    -7168.0
+   ],
+   "symbol": "Border river, outflow"
+  },
+  {
+   "kind": "water.border_river_out",
+   "px": [
+    3911,
+    4095
+   ],
+   "elev_m": 37.7,
+   "label": "B\u00eec outflow (S edge)",
+   "why": "order-6 flowline crosses the S edge; set level 37.7 m; drainage 1,134 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "out",
+    "order": 6,
+    "edge": "S",
+    "level_m": 37.7,
+    "drainage_km2": 1134.2,
+    "direction_confidence": "high",
+    "nhd_levelpath": 1
+   },
+   "geometry": null,
+   "number": 4,
+   "xy_m": [
+    13688.5,
+    0.0
+   ],
+   "xy_center_m": [
+    6520.5,
+    -7168.0
+   ],
+   "symbol": "Border river, outflow"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    1425,
+    0
+   ],
+   "elev_m": 82.9,
+   "label": "R\u00e2ule\u021bul Hulbocica (N edge)",
+   "why": "order-4 creek enters at the edge; drainage 40 km\u00b2 -> small flow (14% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 39.9,
+    "relative_rate": 0.14,
+    "size": "small",
+    "entry": "enters at the edge",
+    "nhd_levelpath": "86"
+   },
+   "geometry": null,
+   "number": 5,
+   "xy_m": [
+    4987.5,
+    14332.5
+   ],
+   "xy_center_m": [
+    -2180.5,
+    7164.5
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    3357,
+    37
+   ],
+   "elev_m": 105.7,
+   "label": "unnamed order-4 stream",
+   "why": "order-4 creek upstream end inside the map (reaches this order here); drainage 32 km\u00b2 -> small flow (12% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 32.5,
+    "relative_rate": 0.12,
+    "size": "small",
+    "entry": "upstream end inside the map (reaches this order here)",
+    "nhd_levelpath": "1165"
+   },
+   "geometry": null,
+   "number": 6,
+   "xy_m": [
+    11749.5,
+    14203.0
+   ],
+   "xy_center_m": [
+    4581.5,
+    7035.0
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    3662,
+    143
+   ],
+   "elev_m": 93.9,
+   "label": "unnamed order-4 stream",
+   "why": "order-4 creek headwater inside the map; drainage 32 km\u00b2 -> small flow (12% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 32.5,
+    "relative_rate": 0.12,
+    "size": "small",
+    "entry": "headwater inside the map",
+    "nhd_levelpath": "203"
+   },
+   "geometry": null,
+   "number": 7,
+   "xy_m": [
+    12817.0,
+    13832.0
+   ],
+   "xy_center_m": [
+    5649.0,
+    6664.0
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    1833,
+    552
+   ],
+   "elev_m": 98.1,
+   "label": "unnamed order-4 stream",
+   "why": "order-4 creek upstream end inside the map (reaches this order here); drainage 40 km\u00b2 -> small flow (14% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 39.9,
+    "relative_rate": 0.14,
+    "size": "small",
+    "entry": "upstream end inside the map (reaches this order here)",
+    "nhd_levelpath": "325"
+   },
+   "geometry": null,
+   "number": 8,
+   "xy_m": [
+    6415.5,
+    12400.5
+   ],
+   "xy_center_m": [
+    -752.5,
+    5232.5
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    2,
+    3868
+   ],
+   "elev_m": 116.1,
+   "label": "unnamed order-4 stream",
+   "why": "order-4 creek headwater inside the map; drainage 32 km\u00b2 -> small flow (11% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 31.6,
+    "relative_rate": 0.11,
+    "size": "small",
+    "entry": "headwater inside the map",
+    "nhd_levelpath": "708"
+   },
+   "geometry": null,
+   "number": 9,
+   "xy_m": [
+    7.0,
+    794.5
+   ],
+   "xy_center_m": [
+    -7161.0,
+    -6373.5
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    0,
+    4043
+   ],
+   "elev_m": 80.9,
+   "label": "unnamed order-5 stream (W edge)",
+   "why": "order-5 creek enters at the edge; drainage 279 km\u00b2 -> large flow (100% of the largest stream here)",
+   "params": {
+    "order": 5,
+    "drainage_km2": 279.1,
+    "relative_rate": 1.0,
+    "size": "large",
+    "entry": "enters at the edge",
+    "nhd_levelpath": "124"
+   },
+   "geometry": null,
+   "number": 10,
+   "xy_m": [
+    0.0,
+    182.0
+   ],
+   "xy_center_m": [
+    -7168.0,
+    -6986.0
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    1549,
+    4059
+   ],
+   "elev_m": 81.4,
+   "label": "Valea Schinoasa",
+   "why": "order-4 creek upstream end inside the map (reaches this order here); drainage 32 km\u00b2 -> small flow (12% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 32.5,
+    "relative_rate": 0.12,
+    "size": "small",
+    "entry": "upstream end inside the map (reaches this order here)",
+    "nhd_levelpath": "14"
+   },
+   "geometry": null,
+   "number": 11,
+   "xy_m": [
+    5421.5,
+    126.0
+   ],
+   "xy_center_m": [
+    -1746.5,
+    -7042.0
+   ],
+   "symbol": "Stream source"
+  }
+ ]
+}
