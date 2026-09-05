@@ -18,6 +18,22 @@ Chattanooga - a4f662m/
 └── resources/                   # 256 x 256 resource masks, when present
 ```
 
+## Git LFS
+
+Heightmaps (`*_heightmap.png`, `*_worldmap.png`) and finished CS2 map files (`*.cok`) are
+stored with [Git LFS](https://git-lfs.com/). To get real files instead of small pointer
+stubs, install git-lfs (bundled with Git for Windows) and run once:
+
+```
+git lfs install
+```
+
+before cloning, or `git lfs pull` inside an existing clone. Alternatively download any map
+folder from the GitHub web UI, which serves the real files.
+
+GitHub's free LFS tier is 1 GB of storage and 1 GB of bandwidth per month; each map is roughly
+60 MB, so that is about 15 maps stored and 15 full downloads a month before a data pack is needed.
+
 ## Importing a map
 
 1. Copy the `*_heightmap.png` and `*_worldmap.png` into
