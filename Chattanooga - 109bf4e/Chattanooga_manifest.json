@@ -1,0 +1,268 @@
+{
+ "site": {
+  "name": "chattanooga",
+  "lat": 35.0456,
+  "lon": -85.3097,
+  "epsg": 32616,
+  "cx": 654164.7345522539,
+  "cy": 3879405.9861067547,
+  "playable_bbox_utm": [
+   646996.7345522539,
+   3872237.9861067547,
+   661332.7345522539,
+   3886573.9861067547
+  ],
+  "world_bbox_utm": [
+   625492.7345522539,
+   3850733.9861067547,
+   682836.7345522539,
+   3908077.9861067547
+  ],
+  "playable_bbox_wgs84": [
+   -85.38953083985513,
+   34.97987374245265,
+   -85.22974555624184,
+   35.11127990452775
+  ],
+  "world_bbox_wgs84": [
+   -85.62828540183334,
+   34.78242045396377,
+   -84.98913694100627,
+   35.30803788244019
+  ]
+ },
+ "params": {
+  "exaggeration": 1.0,
+  "sea_level_m": null,
+  "oversample": "auto",
+  "deterrace": "auto",
+  "burn": true,
+  "hydro": {
+   "min_order": 2,
+   "width_by_order": {
+    "2": 4,
+    "3": 8,
+    "4": 14,
+    "5": 24,
+    "6": 40,
+    "7": 70,
+    "8": 120,
+    "9": 200,
+    "10": 300
+   },
+   "depth_by_order": {
+    "2": 0.8,
+    "3": 1.2,
+    "4": 2.0,
+    "5": 3.0,
+    "6": 4.0,
+    "7": 6.0,
+    "8": 8.0,
+    "9": 12.0,
+    "10": 15.0
+   },
+   "depth_scale": 1.0,
+   "polygon_taper_m": 60.0,
+   "pond_depth_m": 2.0,
+   "min_polygon_area_m2": 2000.0,
+   "surface_smooth_m": 120.0
+  },
+  "floor_margin_m": 5.0
+ },
+ "dem_source": {
+  "finest_ground_m": 0.82,
+  "finest_name": "GA_Statewide_2018_B18_DRRA",
+  "datasets": [
+   "GA_Statewide_2018_B18_DRRA",
+   "TN_27County_blk4_2015",
+   "TN_HamiltonCounty_B25",
+   "TN_WestTN_2019_B19",
+   "n35w086",
+   "n36w086",
+   "ned19_n35x00_w085x25_ga_dadewalkerco_2007",
+   "ned19_n35x00_w085x25_tn_hamliton_2011",
+   "ned19_n35x00_w085x50_ga_dadewalkerco_2007",
+   "ned19_n35x00_w085x50_tn_hamliton_2011",
+   "ned19_n35x25_w085x25_tn_hamliton_2011",
+   "ned19_n35x25_w085x50_tn_hamliton_2011"
+  ],
+  "playable_oversample": 2
+ },
+ "nodata_filled_fraction": {
+  "playable": 0.0,
+  "world": 0.0
+ },
+ "terracing": {
+  "playable_integer_fraction": 0.018805980682373047,
+  "world_integer_fraction": 0.01954507827758789,
+  "deterraced": false
+ },
+ "water_polygons_playable": [
+  {
+   "name": "Tennessee River",
+   "ftype": 460,
+   "area_km2": 10.654,
+   "order": 9,
+   "depth_m": 12.0,
+   "surface_p10_m": 193.3,
+   "surface_p90_m": 193.65
+  },
+  {
+   "name": "South Chickamauga Creek",
+   "ftype": 390,
+   "area_km2": 0.121,
+   "order": 6,
+   "depth_m": 4.0,
+   "surface_p10_m": 193.81,
+   "surface_p90_m": 194.32
+  },
+  {
+   "name": "Baylor Lake",
+   "ftype": 390,
+   "area_km2": 0.093,
+   "order": 4,
+   "depth_m": 2.0,
+   "surface_p10_m": 193.5,
+   "surface_p90_m": 194.26
+  },
+  {
+   "name": "unnamed ftype 390",
+   "ftype": 390,
+   "area_km2": 0.066,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 197.1,
+   "surface_p90_m": 197.26
+  },
+  {
+   "name": "unnamed ftype 390",
+   "ftype": 390,
+   "area_km2": 0.049,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 193.49,
+   "surface_p90_m": 198.82
+  },
+  {
+   "name": "Lake Lookout",
+   "ftype": 390,
+   "area_km2": 0.041,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 210.31,
+   "surface_p90_m": 211.04
+  },
+  {
+   "name": "unnamed ftype 436",
+   "ftype": 436,
+   "area_km2": 0.03,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 206.14,
+   "surface_p90_m": 212.68
+  },
+  {
+   "name": "Raccoon Mountain Pumped Storage Dam and Reservoir",
+   "ftype": 390,
+   "area_km2": 0.029,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 504.61,
+   "surface_p90_m": 512.06
+  },
+  {
+   "name": "unnamed ftype 390",
+   "ftype": 390,
+   "area_km2": 0.028,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 202.29,
+   "surface_p90_m": 204.34
+  },
+  {
+   "name": "unnamed ftype 390",
+   "ftype": 390,
+   "area_km2": 0.025,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 197.74,
+   "surface_p90_m": 197.74
+  },
+  {
+   "name": "unnamed ftype 436",
+   "ftype": 436,
+   "area_km2": 0.023,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 198.92,
+   "surface_p90_m": 212.75
+  },
+  {
+   "name": "unnamed ftype 390",
+   "ftype": 390,
+   "area_km2": 0.021,
+   "order": 0,
+   "depth_m": 2.0,
+   "surface_p10_m": 198.62,
+   "surface_p90_m": 198.62
+  }
+ ],
+ "water_fraction": {
+  "playable": 0.061881065368652344,
+  "world": 0.05617028474807739
+ },
+ "vertical": {
+  "water_surface_real_m": 193.3,
+  "sea_level_m": 63.0,
+  "offset_m": -130.3,
+  "exaggeration": 1.0,
+  "height_scale_m": 610.0,
+  "union_min_m": 5.750003051757801,
+  "union_max_m": 596.3675415039063,
+  "m_per_level": 0.009308003356984817,
+  "water_surface_source": "Tennessee River (order 9, 10.654 km2) p10 surface"
+ },
+ "world_center_mean_abs_diff_before_replace_m": 0.38547326720460307,
+ "playable": {
+  "min_real_m": 171.65957641601562,
+  "max_real_m": 656.28564453125,
+  "relief_m": 484.6260681152344,
+  "min_cs2_m": 41.35957336425781,
+  "max_cs2_m": 525.9856567382812,
+  "buildable_fraction_land": 0.5064646321144183,
+  "buildable_fraction_all": 0.5098690986633301,
+  "px_min": 4443,
+  "px_max": 56509
+ },
+ "world": {
+  "min_real_m": 136.0500030517578,
+  "max_real_m": 726.6675415039062,
+  "px_min": 618,
+  "px_max": 64070
+ },
+ "elapsed_s": 26.9,
+ "outputs": {
+  "heightmap": {
+   "path": "out\\chattanooga\\chattanooga_heightmap.png",
+   "shape": [
+    4096,
+    4096
+   ],
+   "dtype": "uint16",
+   "min_px": 4443,
+   "max_px": 56509,
+   "unique_values": 51637
+  },
+  "worldmap": {
+   "path": "out\\chattanooga\\chattanooga_worldmap.png",
+   "shape": [
+    4096,
+    4096
+   ],
+   "dtype": "uint16",
+   "min_px": 618,
+   "max_px": 64070,
+   "unique_values": 59708
+  }
+ }
+}

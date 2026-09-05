@@ -27,6 +27,8 @@ Chattanooga - a4f662m/
 
 ## Maps
 
-| Map | Centre | Height scale | Buildable | QA |
-|---|---|---|---|---|
-| _none published yet_ | | | | |
+<!-- maps:start -->
+| Map | Centre | Height scale | Sea level | Exag. | Buildable | Relief | QA | Published |
+|---|---|---|---|---|---|---|---|---|
+| [Chattanooga - 109bf4e](Chattanooga%20-%20109bf4e/) | 35.0456, -85.3097 | **610 m** | 63 m | ×1.00 | 51% | 485 m | [QA](Chattanooga%20-%20109bf4e/Chattanooga_qa.png) |  |
+<!-- maps:end -->
