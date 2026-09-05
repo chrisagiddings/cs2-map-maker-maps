@@ -24,7 +24,7 @@
 
 ## Provenance
 
-- Built by [cs2-map-maker](https://github.com/chrisagiddings/cs2-map-maker) commit `d0c2f5f` on 2026-09-05T17:17:15
+- Built by [cs2-map-maker](https://github.com/chrisagiddings/cs2-map-maker) commit `619a188` on 2026-09-05T17:48:42
 - Command: `python make_map.py --center 35.0456,-85.3097 --name chattanooga`
 - Map hash `109bf4e` (from centre, CRS, vertical and channel settings; see `Chattanooga_manifest.json`)
 - Elevation: USGS 3DEP · Hydrography: USGS NHDPlus HR

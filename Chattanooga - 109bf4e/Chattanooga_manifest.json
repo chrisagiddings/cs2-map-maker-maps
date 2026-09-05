@@ -68,7 +68,8 @@
    "min_polygon_area_m2": 2000.0,
    "surface_smooth_m": 120.0
   },
-  "floor_margin_m": 5.0
+  "floor_margin_m": 5.0,
+  "water_sources": null
  },
  "dem_source": {
   "finest_ground_m": 0.82,
@@ -239,6 +240,304 @@
   "m_per_level": 0.009308003356984817,
   "water_surface_source": "Tennessee River (order 9, 10.654 km2) p10 surface"
  },
+ "water_sources": [
+  {
+   "kind": "water.border_river_in",
+   "px": [
+    264,
+    4095
+   ],
+   "elev_m": 65.9,
+   "label": "Lookout Creek inflow (S edge)",
+   "why": "order-6 flowline crosses the S edge; set level 65.9 m; drainage 430 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "in",
+    "order": 6,
+    "edge": "S",
+    "level_m": 65.9,
+    "drainage_km2": 430.328,
+    "direction_confidence": "high",
+    "nhd_levelpath": 25000300000773
+   },
+   "geometry": null,
+   "number": 1,
+   "xy_m": [
+    924.0,
+    0.0
+   ],
+   "xy_center_m": [
+    -6244.0,
+    -7168.0
+   ],
+   "symbol": "Border river, inflow"
+  },
+  {
+   "kind": "water.border_river_in",
+   "px": [
+    4095,
+    746
+   ],
+   "elev_m": 64.0,
+   "label": "South Chickamauga Creek inflow (E edge)",
+   "why": "order-6 flowline crosses the E edge; set level 64.0 m; drainage 1,192 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "in",
+    "order": 6,
+    "edge": "E",
+    "level_m": 64.0,
+    "drainage_km2": 1192.0357997899998,
+    "direction_confidence": "high",
+    "nhd_levelpath": 25000300000553
+   },
+   "geometry": null,
+   "number": 2,
+   "xy_m": [
+    14332.5,
+    11721.5
+   ],
+   "xy_center_m": [
+    7164.5,
+    4553.5
+   ],
+   "symbol": "Border river, inflow"
+  },
+  {
+   "kind": "water.border_river_in",
+   "px": [
+    0,
+    757
+   ],
+   "elev_m": 63.0,
+   "label": "Tennessee River inflow (W edge)",
+   "why": "order-9 flowline crosses the W edge; set level 63.0 m; drainage 55,076 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "in",
+    "order": 9,
+    "edge": "W",
+    "level_m": 63.0,
+    "drainage_km2": 55076.43558504,
+    "direction_confidence": "high",
+    "nhd_levelpath": 25000100000104
+   },
+   "geometry": null,
+   "number": 3,
+   "xy_m": [
+    0.0,
+    11683.0
+   ],
+   "xy_center_m": [
+    -7168.0,
+    4515.0
+   ],
+   "symbol": "Border river, inflow"
+  },
+  {
+   "kind": "water.border_river_in",
+   "px": [
+    4095,
+    91
+   ],
+   "elev_m": 63.4,
+   "label": "Tennessee River inflow (E edge)",
+   "why": "order-9 flowline crosses the E edge; set level 63.4 m; drainage 52,679 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "in",
+    "order": 9,
+    "edge": "E",
+    "level_m": 63.4,
+    "drainage_km2": 52678.97338526,
+    "direction_confidence": "high",
+    "nhd_levelpath": 25000100000104
+   },
+   "geometry": null,
+   "number": 4,
+   "xy_m": [
+    14332.5,
+    14014.0
+   ],
+   "xy_center_m": [
+    7164.5,
+    6846.0
+   ],
+   "symbol": "Border river, inflow"
+  },
+  {
+   "kind": "water.border_river_out",
+   "px": [
+    473,
+    0
+   ],
+   "elev_m": 63.0,
+   "label": "Tennessee River outflow (N edge)",
+   "why": "order-9 flowline crosses the N edge; set level 63.0 m; drainage 54,972 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "out",
+    "order": 9,
+    "edge": "N",
+    "level_m": 63.0,
+    "drainage_km2": 54971.99798501,
+    "direction_confidence": "high",
+    "nhd_levelpath": 25000100000104
+   },
+   "geometry": null,
+   "number": 5,
+   "xy_m": [
+    1655.5,
+    14332.5
+   ],
+   "xy_center_m": [
+    -5512.5,
+    7164.5
+   ],
+   "symbol": "Border river, outflow"
+  },
+  {
+   "kind": "water.border_river_out",
+   "px": [
+    0,
+    1193
+   ],
+   "elev_m": 63.0,
+   "label": "Tennessee River outflow (W edge)",
+   "why": "order-9 flowline crosses the W edge; set level 63.0 m; drainage 55,085 km\u00b2; direction confidence high",
+   "params": {
+    "flow": "out",
+    "order": 9,
+    "edge": "W",
+    "level_m": 63.0,
+    "drainage_km2": 55084.95978502,
+    "direction_confidence": "high",
+    "nhd_levelpath": 25000100000104
+   },
+   "geometry": null,
+   "number": 6,
+   "xy_m": [
+    0.0,
+    10157.0
+   ],
+   "xy_center_m": [
+    -7168.0,
+    2989.0
+   ],
+   "symbol": "Border river, outflow"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    4095,
+    30
+   ],
+   "elev_m": 63.4,
+   "label": "North Chickamauga Creek (E edge)",
+   "why": "order-5 creek enters at the edge; drainage 309 km\u00b2 -> large flow (100% of the largest stream here)",
+   "params": {
+    "order": 5,
+    "drainage_km2": 309.21259996,
+    "relative_rate": 1.0,
+    "size": "large",
+    "entry": "enters at the edge",
+    "nhd_levelpath": "25000300001351"
+   },
+   "geometry": null,
+   "number": 7,
+   "xy_m": [
+    14332.5,
+    14227.5
+   ],
+   "xy_center_m": [
+    7164.5,
+    7059.5
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    1598,
+    4095
+   ],
+   "elev_m": 67.9,
+   "label": "Chattanooga Creek (S edge)",
+   "why": "order-5 creek enters at the edge; drainage 134 km\u00b2 -> medium flow (43% of the largest stream here)",
+   "params": {
+    "order": 5,
+    "drainage_km2": 133.86229999,
+    "relative_rate": 0.43,
+    "size": "medium",
+    "entry": "enters at the edge",
+    "nhd_levelpath": "25000300001103"
+   },
+   "geometry": null,
+   "number": 8,
+   "xy_m": [
+    5593.0,
+    0.0
+   ],
+   "xy_center_m": [
+    -1575.0,
+    -7168.0
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    1321,
+    699
+   ],
+   "elev_m": 63.2,
+   "label": "Mountain Creek",
+   "why": "order-4 creek upstream end inside the map; drainage 35 km\u00b2 -> small flow (11% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 34.54929999,
+    "relative_rate": 0.11,
+    "size": "small",
+    "entry": "upstream end inside the map",
+    "nhd_levelpath": "25000300003162"
+   },
+   "geometry": null,
+   "number": 9,
+   "xy_m": [
+    4623.5,
+    11886.0
+   ],
+   "xy_center_m": [
+    -2544.5,
+    4718.0
+   ],
+   "symbol": "Stream source"
+  },
+  {
+   "kind": "water.stream",
+   "px": [
+    993,
+    2110
+   ],
+   "elev_m": 63.1,
+   "label": "unnamed order-4 stream",
+   "why": "order-4 creek upstream end inside the map; drainage 6 km\u00b2 -> small flow (2% of the largest stream here)",
+   "params": {
+    "order": 4,
+    "drainage_km2": 6.49589998,
+    "relative_rate": 0.02,
+    "size": "small",
+    "entry": "upstream end inside the map",
+    "nhd_levelpath": "25000300005072"
+   },
+   "geometry": null,
+   "number": 10,
+   "xy_m": [
+    3475.5,
+    6947.5
+   ],
+   "xy_center_m": [
+    -3692.5,
+    -220.5
+   ],
+   "symbol": "Stream source"
+  }
+ ],
  "world_center_mean_abs_diff_before_replace_m": 0.38547326720460307,
  "playable": {
   "min_real_m": 171.65957641601562,
@@ -257,7 +556,7 @@
   "px_min": 618,
   "px_max": 64070
  },
- "elapsed_s": 27.3,
+ "elapsed_s": 57.5,
  "outputs": {
   "heightmap": {
    "path": "out\\chattanooga\\chattanooga_heightmap.png",
@@ -307,8 +606,8 @@
    "maps_repo": null,
    "no_push": false
   },
-  "generated": "2026-09-05T17:17:15",
-  "git_commit": "d0c2f5f",
+  "generated": "2026-09-05T17:48:42",
+  "git_commit": "619a188",
   "cs2_spec": {
    "heightmap_px": 4096,
    "playable_m": 14336.0,
