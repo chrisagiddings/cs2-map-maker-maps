@@ -34,6 +34,7 @@
  "params": {
   "exaggeration": 1.0,
   "sea_level_m": null,
+  "water_surface_real_m": null,
   "oversample": "auto",
   "deterrace": "auto",
   "burn": true,
@@ -87,6 +88,22 @@
    "ned19_n35x25_w085x50_tn_hamliton_2011"
   ],
   "playable_oversample": 2
+ },
+ "sources": {
+  "elevation": {
+   "service": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage",
+   "vertical_datum": "NAVD88 (3DEP)",
+   "playable_cache": "C:\\Users\\Client\\cs2-maps\\data\\raw\\dem\\22fec018ed8067e2.tif",
+   "world_cache": "C:\\Users\\Client\\cs2-maps\\data\\raw\\dem\\d56236e88c00ecac.tif"
+  },
+  "hydrography": {
+   "service": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer",
+   "layers": {
+    "flowline": 3,
+    "area": 8,
+    "waterbody": 9
+   }
+  }
  },
  "nodata_filled_fraction": {
   "playable": 0.0,
@@ -229,8 +246,8 @@
   "relief_m": 484.6260681152344,
   "min_cs2_m": 41.35957336425781,
   "max_cs2_m": 525.9856567382812,
-  "buildable_fraction_land": 0.5064646321144183,
-  "buildable_fraction_all": 0.5098690986633301,
+  "buildable_fraction_land": 0.506464568578077,
+  "buildable_fraction_all": 0.5098690390586853,
   "px_min": 4443,
   "px_max": 56509
  },
@@ -240,7 +257,7 @@
   "px_min": 618,
   "px_max": 64070
  },
- "elapsed_s": 26.9,
+ "elapsed_s": 27.3,
  "outputs": {
   "heightmap": {
    "path": "out\\chattanooga\\chattanooga_heightmap.png",
@@ -263,6 +280,40 @@
    "min_px": 618,
    "max_px": 64070,
    "unique_values": 59708
+  }
+ },
+ "run": {
+  "argv": [
+   "--center",
+   "35.0456,-85.3097",
+   "--name",
+   "chattanooga"
+  ],
+  "args": {
+   "center": "35.0456,-85.3097",
+   "bbox": null,
+   "name": "chattanooga",
+   "exaggeration": 1.0,
+   "sea_level": null,
+   "water_surface": null,
+   "oversample": "auto",
+   "deterrace": "auto",
+   "no_burn": false,
+   "min_order": 2,
+   "depth_scale": 1.0,
+   "epsg": null,
+   "out": "out",
+   "publish": false,
+   "maps_repo": null,
+   "no_push": false
+  },
+  "generated": "2026-09-05T17:17:15",
+  "git_commit": "d0c2f5f",
+  "cs2_spec": {
+   "heightmap_px": 4096,
+   "playable_m": 14336.0,
+   "world_m": 57344.0,
+   "pixel_65535_m": 610.0
   }
  }
 }
